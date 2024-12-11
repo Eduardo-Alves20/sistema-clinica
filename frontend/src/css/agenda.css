@@ -1,0 +1,137 @@
+.calendar-container {
+  padding: 20px;
+  background-color: white;
+  height: calc(100vh - 120px);
+  width: 100%; 
+  margin: 0;
+}
+
+.rbc-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f7f9fc; /* Cor de fundo leve para contraste */
+  border-radius: 8px; /* Bordas arredondadas para um visual moderno */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar */
+}
+
+.rbc-toolbar button {
+  background-color: #0d6efd; /* Azul para consistência */
+  color: white;
+  border: none;
+  padding: 8px 16px; /* Botões mais destacados */
+  border-radius: 5px;
+  margin: 0 5px; /* Espaçamento entre os botões */
+  font-size: 14px;
+  font-weight: bold; /* Texto mais destacado */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.rbc-toolbar button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Efeito de leve aumento ao passar o mouse */
+}
+
+.rbc-toolbar button:active {
+  background-color: #003d80; /* Cor mais escura ao clicar */
+  transform: scale(0.95); /* Efeito de clique */
+}
+
+.rbc-toolbar label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2d4360;
+}
+
+.rbc-toolbar .rbc-btn-group {
+  display: flex;
+  align-items: center;
+}
+
+
+.rbc-month-view {
+  border: 1px solid #e4e4e4;
+}
+
+.rbc-event {
+  background-color: #0d6efd;
+  color: white;
+  padding: 3px 5px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.rbc-event:hover {
+  background-color: #0056b3;
+}
+
+.rbc-header {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.rbc-date-cell {
+  text-align: center;
+  padding: 5px;
+}
+
+.rbc-today {
+  background-color: #f0f8ff;
+}
+
+.rbc-off-range {
+  background-color: #f9f9f9;
+}
+
+.content {
+  margin-left: 250px; 
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.calendar-container .rbc-calendar {
+  height: 100%;
+}
+
+/* Estilo para o Modal */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.ReactModal__Content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  height: 650px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button + button {
+  margin-left: 10px;
+}
